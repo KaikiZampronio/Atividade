@@ -1,0 +1,16 @@
+def fatorial(x):
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return x * fatorial(x - 1)
+
+def combinatoria():
+    n = int(input("Digite n: "))
+    k = int(input("Digite k: "))
+    if n < k:
+        print("Combinação: 0 (pois n < k)")
+    else:
+        comb = fatorial(n) // (fatorial(k) * fatorial(n - k))
+        print("Combinação:", comb)
+
+# Para executar: combinatoria()
