@@ -1,0 +1,14 @@
+def avaliacao_aluno():
+    notas = []
+    for i in range(4):
+        nota = float(input(f"Digite a nota {i+1}: "))
+        notas.append(nota)
+    media = sum(notas) / 4
+    if media >= 7:
+        print("Passou por média")
+    elif 4 <= media < 7:
+        print("Está em final")
+    else:
+        print("Reprovou")
+
+# Para executar: avaliacao_aluno()
